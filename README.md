@@ -23,3 +23,19 @@ Este é o ponto de entrada (`app_main`) do firmware do nó transmissor, desenvol
 4. **Rotina de Envio:**
    * O rádio entra em um loop infinito enviando a string `"Olá Mundo! [contador]"` a cada 5 segundos, acompanhado de logs detalhados via `ESP_LOGI` para facilitar o monitoramento em tempo real pelo terminal serial.
 
+### ⚙️ Portabilidade: Como alternar entre Heltec V2 e LilyGo v1.0
+
+Embora ambas as placas compartilhem o mesmo transceptor LoRa, o pino de **Reset (RST)** do rádio está conectado a GPIOs diferentes em cada circuito. 
+
+Para alternar o firmware de uma placa para a outra, basta abrir o arquivo de configuração do driver (geralmente o `lora.c` ou o cabeçalho de pinagem) e **comentar/descomentar** as linhas correspondentes ao pino de Reset:
+
+```c
+// Hardware Pin Mappings for ESP-IDF v5.x
+#define CONFIG_MOSI_GPIO 27
+#define CONFIG_MISO_GPIO 19
+#define CONFIG_SCK_GPIO  5
+#define CONFIG_CS_GPIO   18
+
+/* --- CONFIGURAÇÃO DO PINO DE RESET (RST) --- */
+#define CONFIG_RST_GPIO  14  /* ◄ Descomente para usar a placa Heltec V2 */
+// #define CONFIG_RST_GPIO  23 /* ◄ Descomente para usar a placa LilyGo v1.0 */
