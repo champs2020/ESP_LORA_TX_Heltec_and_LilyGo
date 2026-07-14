@@ -1,0 +1,61 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\tools\python\v5.5.4\venv\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=0 C:\esp\projects_esp-lora\TTGO_LoRa_TX
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.46.2.windows.1")
+-- Minimal build - ON
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git describe returned 'fatal: bad revision 'HEAD''
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5 SoCs
+-- Project sdkconfig file C:/esp/projects_esp-lora/TTGO_LoRa_TX/sdkconfig
+Loading defaults file C:/esp/projects_esp-lora/TTGO_LoRa_TX/sdkconfig.defaults...
+warning: unknown kconfig symbol 'SCK_GPIO' assigned to '5' in C:/esp/projects_esp-lora/TTGO_LoRa_TX/sdkconfig.defaults
+warning: unknown kconfig symbol 'MISO_GPIO' assigned to '19' in C:/esp/projects_esp-lora/TTGO_LoRa_TX/sdkconfig.defaults
+warning: unknown kconfig symbol 'MOSI_GPIO' assigned to '27' in C:/esp/projects_esp-lora/TTGO_LoRa_TX/sdkconfig.defaults
+warning: unknown kconfig symbol 'CS_GPIO' assigned to '18' in C:/esp/projects_esp-lora/TTGO_LoRa_TX/sdkconfig.defaults
+warning: unknown kconfig symbol 'RST_GPIO' assigned to '23' in C:/esp/projects_esp-lora/TTGO_LoRa_TX/sdkconfig.defaults
+warning: unknown kconfig symbol 'DIO0_GPIO' assigned to '26' in C:/esp/projects_esp-lora/TTGO_LoRa_TX/sdkconfig.defaults
+-- Compiler supported targets: xtensa-esp-elf
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Found Python3: C:/Espressif/tools/python/v5.5.4/venv/Scripts/python.exe (found version "3.11.9") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- USING O3
+-- App "TTGO_LoRa_TX" version: 1
+-- Adding linker script C:/esp/projects_esp-lora/TTGO_LoRa_TX/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/esp/projects_esp-lora/TTGO_LoRa_TX/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script C:/esp/v5.5.4/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/esp/v5.5.4/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/esp/v5.5.4/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/esp/v5.5.4/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/esp/v5.5.4/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/esp/v5.5.4/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script C:/esp/v5.5.4/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-reent-funcs.ld
+-- Adding linker script C:/esp/v5.5.4/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_update bootloader bootloader_support cxx driver efuse esp_app_format esp_bootloader_format esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_hw_support esp_mm esp_partition esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esptool_py freertos hal heap log lora main mbedtls newlib partition_table pthread sdmmc soc spi_flash xtensa
+-- Component paths: C:/esp/v5.5.4/esp-idf/components/app_update C:/esp/v5.5.4/esp-idf/components/bootloader C:/esp/v5.5.4/esp-idf/components/bootloader_support C:/esp/v5.5.4/esp-idf/components/cxx C:/esp/v5.5.4/esp-idf/components/driver C:/esp/v5.5.4/esp-idf/components/efuse C:/esp/v5.5.4/esp-idf/components/esp_app_format C:/esp/v5.5.4/esp-idf/components/esp_bootloader_format C:/esp/v5.5.4/esp-idf/components/esp_common C:/esp/v5.5.4/esp-idf/components/esp_driver_ana_cmpr C:/esp/v5.5.4/esp-idf/components/esp_driver_bitscrambler C:/esp/v5.5.4/esp-idf/components/esp_driver_dac C:/esp/v5.5.4/esp-idf/components/esp_driver_gpio C:/esp/v5.5.4/esp-idf/components/esp_driver_gptimer C:/esp/v5.5.4/esp-idf/components/esp_driver_i2c C:/esp/v5.5.4/esp-idf/components/esp_driver_i2s C:/esp/v5.5.4/esp-idf/components/esp_driver_ledc C:/esp/v5.5.4/esp-idf/components/esp_driver_mcpwm C:/esp/v5.5.4/esp-idf/components/esp_driver_parlio C:/esp/v5.5.4/esp-idf/components/esp_driver_pcnt C:/esp/v5.5.4/esp-idf/components/esp_driver_rmt C:/esp/v5.5.4/esp-idf/components/esp_driver_sdio C:/esp/v5.5.4/esp-idf/components/esp_driver_sdm C:/esp/v5.5.4/esp-idf/components/esp_driver_sdmmc C:/esp/v5.5.4/esp-idf/components/esp_driver_sdspi C:/esp/v5.5.4/esp-idf/components/esp_driver_spi C:/esp/v5.5.4/esp-idf/components/esp_driver_tsens C:/esp/v5.5.4/esp-idf/components/esp_driver_twai C:/esp/v5.5.4/esp-idf/components/esp_driver_uart C:/esp/v5.5.4/esp-idf/components/esp_driver_usb_serial_jtag C:/esp/v5.5.4/esp-idf/components/esp_hw_support C:/esp/v5.5.4/esp-idf/components/esp_mm C:/esp/v5.5.4/esp-idf/components/esp_partition C:/esp/v5.5.4/esp-idf/components/esp_pm C:/esp/v5.5.4/esp-idf/components/esp_psram C:/esp/v5.5.4/esp-idf/components/esp_ringbuf C:/esp/v5.5.4/esp-idf/components/esp_rom C:/esp/v5.5.4/esp-idf/components/esp_security C:/esp/v5.5.4/esp-idf/components/esp_system C:/esp/v5.5.4/esp-idf/components/esp_timer C:/esp/v5.5.4/esp-idf/components/esptool_py C:/esp/v5.5.4/esp-idf/components/freertos C:/esp/v5.5.4/esp-idf/components/hal C:/esp/v5.5.4/esp-idf/components/heap C:/esp/v5.5.4/esp-idf/components/log C:/esp/projects_esp-lora/TTGO_LoRa_TX/components/lora C:/esp/projects_esp-lora/TTGO_LoRa_TX/main C:/esp/v5.5.4/esp-idf/components/mbedtls C:/esp/v5.5.4/esp-idf/components/newlib C:/esp/v5.5.4/esp-idf/components/partition_table C:/esp/v5.5.4/esp-idf/components/pthread C:/esp/v5.5.4/esp-idf/components/sdmmc C:/esp/v5.5.4/esp-idf/components/soc C:/esp/v5.5.4/esp-idf/components/spi_flash C:/esp/v5.5.4/esp-idf/components/xtensa
+-- Configuring done (9.7s)
+-- Generating done (0.5s)
+-- Build files have been written to: C:/esp/projects_esp-lora/TTGO_LoRa_TX/build

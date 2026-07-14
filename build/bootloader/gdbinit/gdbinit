@@ -1,0 +1,2 @@
+source C:/esp/projects_esp-lora/TTGO_LoRa_TX/build/bootloader/gdbinit/symbols
+source C:/esp/projects_esp-lora/TTGO_LoRa_TX/build/bootloader/gdbinit/connect
